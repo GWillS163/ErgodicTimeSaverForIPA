@@ -19,7 +19,8 @@ def readROMTemp(tempPh, tempNm):
     return res if isinstance(res, dict) else {}
 
 
-tempPath = r"D:\work\长流程优化"
-tempName = r"temp.pytmp"
+# tempPath = r"D:\work\长流程优化"
+# tempName = r"temp.pytmp"
+
 RAMTemp = readROMTemp(tempPath, tempName)
-print(RAMTemp)
+# print(RAMTemp)

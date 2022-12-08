@@ -11,7 +11,7 @@ class ErgodicLifeCycle(unittest.TestCase):
     def test_2_A_ReadROMTemp(self):
         # 第一次运行程序时，ROMTemp为空
         print("第一次运行程序时，ROMTemp为空")
-        self.assertEqual(None,
+        self.assertEqual({},
                          readROMTemp(tempPath, tempName))
 
     def test_3_B_ReadRAMTemp(self):

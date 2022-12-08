@@ -11,7 +11,7 @@ def getDataUnstable(itemKey: int):
     :return:
     """
     mockData = [i * itemKey for i in range(4)]
-    if random.randint(0, 10) >= 11:
+    if random.randint(0, 10) >= 9:
         raise Exception('Mock Exception')
     time.sleep(3)
     return mockData
