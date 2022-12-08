@@ -16,5 +16,6 @@ def load(path):
 
 
 if __name__ == '__main__':
-    dump({"a": 1, "b": 2}, "./unitTest.pytmp")
-    print(load("./unitTest.pytmp"))
+    # dump({"a": 1, "b": 2}, "./unitTest.pytmp")
+    # print(load("./unitTest.pytmp"))
+    print(load(r"D:\work\长流程优化\temp.pytmp"))

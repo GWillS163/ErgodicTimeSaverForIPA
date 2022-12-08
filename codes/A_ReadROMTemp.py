@@ -11,10 +11,15 @@ def load(path):
         return pickle.load(f)
 
 
-def readROMTemp(tempPath, tempName):
-    if not os.path.exists(tempPath):
-        return None
-    fullPath = os.path.join(tempPath, tempName)
-    if os.path.isfile(fullPath):
-        return load(fullPath)
+def readROMTemp(tempPh, tempNm):
+    fullPath = os.path.join(tempPh, tempNm)
+    if not os.path.exists(tempPh) or not os.path.isfile(fullPath):
+        return {}
+    res = load(fullPath)
+    return res if isinstance(res, dict) else {}
 
+
+tempPath = r"D:\work\长流程优化"
+tempName = r"temp.pytmp"
+RAMTemp = readROMTemp(tempPath, tempName)
+print(RAMTemp)

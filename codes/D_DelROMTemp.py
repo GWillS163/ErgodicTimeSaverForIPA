@@ -14,3 +14,4 @@ def delROMTemp(tempPath, tempName):
         os.rmdir(tempPath)
 
 
+delROMTemp(tempPath, tempName)

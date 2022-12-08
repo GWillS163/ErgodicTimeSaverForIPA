@@ -22,5 +22,11 @@
 
 ## 测试代码
 test/目录下,共有两个文件，模拟了ErgodicTimeSaver周期的两个测试用例
-lifeCycleTest1: 模拟了第一次程序运行的情况，遍历两次后中断
-lifeCycleTest2: 模拟了第二次程序运行的情况，读取硬盘缓存，直接跳过已处理部分，直至运行成功。
+- lifeCycleTest1: 模拟了第一次程序运行的情况，遍历两次后中断
+- lifeCycleTest2: 模拟了第二次程序运行的情况，读取硬盘缓存，直接跳过已处理部分，直至运行成功。
+
+## 使用方式
+1. 新增3个变量
+![img.png](res/img3.png)
+2. codes文件夹下的四个模块代码，分别放在4个文件中
+![img_1.png](res/img_4.png)

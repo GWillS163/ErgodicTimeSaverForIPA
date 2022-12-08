@@ -4,15 +4,18 @@
 # Time: 13:35
 
 
-def readRAMTemp(itemKey, RAMTemp):
+def readRAMTemp(itemKey, RAMTmp):
     """
     尝试读取内存中已处理过的数据
     :param itemKey:
-    :param RAMTemp:
+    :param RAMTmp:
     :return:
     """
-    if itemKey in RAMTemp:
-        return RAMTemp[itemKey]
+    if not RAMTmp:
+        return None
+    if itemKey in RAMTmp:
+        return RAMTmp[itemKey]
     return None
 
-
+# itemKey = 1
+itemData = readRAMTemp(itemKey, RAMTemp)

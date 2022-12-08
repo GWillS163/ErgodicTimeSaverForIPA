@@ -11,16 +11,16 @@ def dump(ramTemp, tempPath):
         pickle.dump(ramTemp, f)
 
 
-def addToROMTemp(itemKey, itemData, tempPath, tempName, RAMTemp):
+def addToROMTemp(itemKey, itemData, tempPath, tempName, RAMTmp):
     # 尝试读取ROMTemp
     if not os.path.exists(tempPath):
         os.makedirs(tempPath)
     tempPath = os.path.join(tempPath, tempName)
 
     # RAMTemp 增加
-    RAMTemp.update({itemKey: itemData})
+    RAMTmp.update({itemKey: itemData})
     # ROMTemp 重写
-    dump(RAMTemp, tempPath)
-    return RAMTemp
+    dump(RAMTmp, tempPath)
+    return RAMTmp
 
-
+ramTemp = addToROMTemp(itemKey, itemData, tempPath, tempName, RAMTemp)
