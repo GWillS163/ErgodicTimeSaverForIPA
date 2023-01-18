@@ -14,7 +14,7 @@ RPA开发场景中，有6w条数据需要使用IPA进行处理，但每条需5s�
 > 重复遇到已处理后的数据，则通过内存（RAM）中快速得到已处理关键值的信息。
 
 ## 🐿️快速体验
-> 运行`mockRPA/xxx.rpa`，此demo内含有两个子流程，可直接运行（需修改变量的保存地址）。
+> 运行`RPAMock/xxx.rpa`，此demo内含有两个子流程，可直接运行（需修改变量的保存地址）。
 
 ## 💭解决思路
 在整个流程中，找到四个位置进行优化：
@@ -56,7 +56,7 @@ test/目录下,共有两个文件，模拟了ErgodicTimeSaver周期的两个测�
   <div  align="center" >
   <img src="res/img_4.png" style="width: 50%" alt="放置新代码">
   </div>
-3. 四个模块的输入输出，参考codes/文件夹下的四个模块内最后的执行行（如下. 等号左边是输出，函数里面是输入:D，看不懂的话直接运行mockRPA/xxx.rpa文件吧）。
+3. 四个模块的输入输出，参考codes/文件夹下的四个模块内最后的执行行（如下. 等号左边是输出，函数里面是输入:D，看不懂的话直接运行RPAMock/xxx.rpa文件吧）。
 
 - `codes/A_ReadROMTemp.py`
   ```python
@@ -76,4 +76,4 @@ test/目录下,共有两个文件，模拟了ErgodicTimeSaver周期的两个测�
   delROMTemp(tempPath, tempName)
   ```
   
- 4. 最后，你还可以直接运行mockRPA/xxx.rpa文件，进行快速上手体验（本文配图所在的项目）。
+ 4. 最后，你还可以直接运行RPAMock/xxx.rpa文件，进行快速上手体验（本文配图所在的项目）。
